@@ -839,12 +839,36 @@ svg path {
     position: relative;
 }
 
+.new-products>.flex-container>div>.container-img input {
+    display: none;
+}
+
+.new-products>.flex-container>div>.container-img label {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    color: var(--clr-white);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.new-products>.flex-container>div>.container-img #tym:checked~label,
+#tym1:checked~label {
+    color: var(--clr-red);
+}
+
 .new-products>.flex-container>div>.container-img img {
     width: min(100%, 425px);
     height: min(100%, 411px);
     object-fit: fill;
     cursor: pointer;
 
+}
+
+.new-products>.flex-container>div>.container-img:hover label {
+    right: 20px;
+    transition: all .4s ease;
 }
 
 .new-products>.flex-container:hover>div:not(:hover) {
@@ -894,51 +918,85 @@ svg path {
     width: 100%;
     height: 100%;
     overflow: auto;
+    scrollbar-width: none;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .modal-content {
     flex-direction: column;
     background-color: var(--clr-pink-bg);
-    margin: 15% auto;
+    margin: 10vw;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 50px 0;
+    border: 10px solid var(--clr-darkpink-text);
+    box-shadow: inset 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-.modal-content > form {
-    flex-direction: column;
-    width: 100%;
+.modal-content>form {
+    margin: auto;
+    width: 60%;
 }
-.modal-content > form h2 {
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal-content>h2 {
     color: var(--clr-yellow-bg);
     text-transform: uppercase;
     font-size: var(--fs-h3);
     -webkit-text-stroke: 1px var(--clr-darkpink-text);
     font-family: var(--font-header);
 }
-.modal-content > form td {
-    padding: 0.5em 1em;
-}
-.modal-content > form label, input::placeholder {
+
+.modal-content>form label,
+input::placeholder {
     color: var(--clr-yellow-bg);
+    font-size: var(--fs-text);
 }
-.modal-content > form input {
+
+.modal-content>form input {
+    width: 100%;
     padding: 0.5em 1em;
     background-color: transparent;
     border: 2px solid var(--clr-yellow-bg);
 }
 
+.modal-content>form button {
+    margin: 1em;
+}
+
 .close {
     color: var(--clr-yellow-bg);
-    margin-left:auto ;
+    margin-left: auto;
     font-size: var(--fs-h3);
     font-weight: var(--font-weight-text);
+    background-color: var(--clr-darkpink-text);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
 }
 
 .close:hover,
 .close:focus {
+    background-color: var(--clr-red);
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -1436,6 +1494,7 @@ div.reviews-header>#img-medium-star {
     transition: all .5 ease;
     overflow: hidden;
     border-radius: 10px;
+    margin: 5px;
 }
 
 .reviews_grid-container>div>.imagebox img {
@@ -1449,7 +1508,7 @@ div.reviews-header>#img-medium-star {
 }
 
 .reviews_grid-container>div>.imagebox:hover img {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2.5);
     transition: all .5s ease;
 }
 
@@ -1769,6 +1828,13 @@ footer .flex-container>div ul li a:hover {
 
 footer .flex-container>div ul li {
     padding: 0.5em 0;
+    transition: all 200ms ease;
+}
+
+footer .flex-container>div ul li:hover {
+    padding-left: 0.3em;
+    border-left: 0.3em solid var(--clr-darkpink-text);
+    transition: all 200ms ease;
 }
 
 footer .flex-container>div>.flex-list {
@@ -1843,7 +1909,7 @@ footer>.footer-social>ul img {
     padding: 7px 12px;
     font-size: 18px;
     border-radius: 6px;
-    z-index: 50;
+    z-index: 10;
     transform: scale(1);
     transition: all .2s ease;
 }
@@ -1907,7 +1973,7 @@ footer>.footer-social>ul img {
         right: -100%;
         width: min(15em, 100%);
         height: calc(100vh - 2rem);
-        z-index: 10;
+        z-index: 15;
         overflow: hidden;
         transition: all .5s ease;
         box-shadow: 5px 10px 25px var(--clr-red);
@@ -2074,6 +2140,14 @@ footer>.footer-social>ul img {
         row-gap: 2rem;
     }
 
+    .new-products>.flex-container>div>.container-img label {
+        top: 10px;
+    }
+
+    .new-products>.flex-container>div>.container-img:hover label {
+        right: 10px;
+    }
+
     #products .flex-container_new-release {
         flex-direction: column-reverse;
     }
@@ -2155,6 +2229,16 @@ footer>.footer-social>ul img {
 
     .order .flex-container>div {
         width: 100%;
+    }
+
+    .modal form {
+        width: 100%;
+    }
+
+    .modal .col-25,
+    .col-75 {
+        width: 100%;
+        margin-top: 2px;
     }
 
     .reviews>div.reviews-header>#img-shape-1 {
@@ -2281,21 +2365,20 @@ footer>.footer-social>ul img {
         gap: 1em;
         height: max-content;
     }
+
+    #btnHome {
+        padding: 3px 6px;
+        font-size: 15px;
+    }
 }
 
 /* ==========Tablet screen========== */
 @media (max-width: 1024px) and (min-width: 768px) {
     :root {
-
-        --font-header: 'Chango', sans-serif;
-        --font-text: 'DM Sans', sans-serif;
-
         --fs-primary: clamp(1rem, calc(1rem + 0.2vw), 1.5rem);
         --fs-h1: clamp(3rem, 12vw, 7rem);
         --fs-h3: 23px;
-        --fs-delight: 2rem;
 
-        --font-weight-text: 500;
         --size-medium-star: min(10vw, 70px);
         --size-img-avatar: 80px;
         --size-card-blog: min(90vw, 522px);
@@ -2336,6 +2419,14 @@ footer>.footer-social>ul img {
 
     .new-products>.flex-container {
         gap: 5%;
+    }
+
+    .new-products>.flex-container>div>.container-img label {
+        top: 30px;
+    }
+
+    .new-products>.flex-container>div>.container-img:hover label {
+        right: 30px;
     }
 
     #products .flex-container_new-release {
@@ -2407,6 +2498,10 @@ footer>.footer-social>ul img {
 
     .order .flex-container>div {
         width: 100%;
+    }
+
+    .modal form {
+        width: 80%;
     }
 
     .reviews>.reviews_grid-container {

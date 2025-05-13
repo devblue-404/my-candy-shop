@@ -27,7 +27,7 @@
                 <li class="my-flex-center"><a href="#blogs">blog</a></li>
                 <li class="my-flex-center"><a href="#contact">contact</a></li>
                 <li class="logo-li my-flex-center"><a href="#homelogo" class="logo">
-                        <div class="logo">
+                        <div class="logo" onclick="reloadHomePage()">
                             <div class="frame">
                                 <img src="images/logo-text.png" alt="logo-text" id="logo-text">
                                 <img src="images/logo-img.png" alt="logo-img" id="logo-img">
@@ -153,8 +153,7 @@
 
                         <div class="container-img">
                             <img src="images/frame-sberry.png" alt="this is my img-sberry">
-                            <!-- <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-bookmark"></i> -->
+                            <input type="checkbox" id="tym"><label for="tym"><i class="fa-solid fa-heart"></i></label>
                             <button id="btn-add-cart1" class="my-button btn-yellow .my-flex-center">
                                 <p>add to cart</p>
                             </button>
@@ -171,8 +170,7 @@
 
                         <div class="container-img">
                             <img src="images/frame-mango.png" alt="this is my img-sberry">
-                            <!-- <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-bookmark"></i> -->
+                            <input type="checkbox" id="tym1"><label for="tym1"><i class="fa-solid fa-heart"></i></label>  
                             <button id="btn-add-cart2" class="my-button btn-yellow .my-flex-center">
                                 <p>add to cart</p>
                             </button>
@@ -186,42 +184,55 @@
                 </div>
                 <div id="myModal" class="modal">
                     <div class="modal-content my-flex-center">
-                        <span class="close">&times;</span>
-                        <form class="my-flex-center" action="#" method="post">
-                            <table>
-                                <tr>
-                                    <td><h2>Information</h2></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="fullname">Full Name:</label></td>
-                                    <td><input type="text" id="fullname" name="fullname"
-                                            placeholder="Enter your full name" required pattern="[A-Za-z]" title="Hãy nhập vào chữ!!!"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="phonenumber">Phone Number:</label></td>
-                                    <td><input type="tel" id="phonenumber" name="phonenumber"
-                                            placeholder="Enter your phone number" required pattern="\d{0,9}" maxlength="10" title="Hãy nhập vào số tối đa 10 số"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="email">Email:</label></td>
-                                    <td><input type="email" name="email" id="email" placeholder="Enter your email"required minlength="4"></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="quantity">Quantity:</label></td>
-                                    <td><input type="number" id="quantity" name="quantity" placeholder="Enter quantity"
-                                            min="1" required></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <button type="submit" class="my-button btn-yellow">
-                                            <p>Submit</p>
-                                        </button>
-                                        <button type="reset" class="my-button btn-yellow">
-                                            <p>Reset</p>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </table>
+                        <span class="close my-flex-center">&times;</span>
+                        <h2>Information</h2>
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fullname">Full Name:</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"
+                                        required pattern="^[A-Za-z\s]+$" title="Hãy nhập vào chữ!!!">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="phonenumber">Phone Number:</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="tel" id="phonenumber" name="phonenumber"
+                                        placeholder="Enter your phone number" required pattern="\d{0,9}" maxlength="10"
+                                        title="Hãy nhập vào số tối đa 10 số">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="email">Email:</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="email" name="email" id="email" placeholder="Enter your email" required
+                                        minlength="4" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="quantity">Quantity:</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="number" id="quantity" name="quantity" placeholder="Enter quantity"
+                                        min="1" required>
+                                </div>
+                            </div>
+                            <div class="row my-flex-center">
+                                <button type="submit" class="my-button btn-yellow">
+                                    <p>Submit</p>
+                                </button>
+                                <button type="reset" class="my-button btn-yellow">
+                                    <p>Reset</p>
+                                </button>
+                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -373,7 +384,7 @@
                         <div class="imagebox">
                             <img src="images/avatar-2.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
@@ -389,7 +400,7 @@
                         <div class="imagebox">
                             <img src="images/avatar-3.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
@@ -405,7 +416,7 @@
                         <div class="imagebox">
                             <img src="images/avatar-4.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
                                 <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
@@ -440,7 +451,7 @@
                             <h3>blog title 01</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow my-flex-center">
+                        <button class="my-button btn-yellow my-flex-center" onclick="openBlogsPage()">
                             <p>read blog</p>
                         </button>
                     </div>
@@ -462,7 +473,7 @@
                             <h3>blog title 02</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow my-flex-center">
+                        <button class="my-button btn-yellow my-flex-center" onclick="openBlogsPage()">
                             <p>read blog</p>
                         </button>
                     </div>
@@ -484,7 +495,7 @@
                             <h3>blog title 03</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow my-flex-center">
+                        <button class="my-button btn-yellow my-flex-center" onclick="openBlogsPage()">
                             <p>read blog</p>
                         </button>
                     </div>
@@ -506,7 +517,7 @@
                             <h3>blog title 04</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow my-flex-center">
+                        <button class="my-button btn-yellow my-flex-center" onclick="openBlogsPage()">
                             <p>read blog</p>
                         </button>
                     </div>
@@ -537,17 +548,17 @@
                 <h3>sweet delight</h3>
                 <div class="flex-list">
                     <ul id="list-left">
-                        <li><a href="">2021's Bestsellers</a></li>
-                        <li><a href="">How to Order</a></li>
-                        <li><a href="">Payment Method</a></li>
-                        <li><a href="">Order Status</a></li>
-                        <li><a href="">New Promos</a></li>
+                        <li><a href="#products">2021's Bestsellers</a></li>
+                        <li><a href="#products">How to Order</a></li>
+                        <li><a href="#products">Payment Method</a></li>
+                        <li><a href="#products">Order Status</a></li>
+                        <li><a href="#products">New Promos</a></li>
                     </ul>
                     <ul id="list-right">
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Delivery</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Gift</a></li>
+                        <li><a href="#blogs">Blog</a></li>
+                        <li><a href="#products">Delivery</a></li>
+                        <li><a href="#contact">Support</a></li>
+                        <li><a href="#">Gift</a></li>
                     </ul>
                 </div>
             </div>
@@ -573,9 +584,9 @@
         <div class="footer-social">
             <p class="my-text">© Copyright 2025 <a href="#">Sweet Delights</a> All Rights Reserved</p>
             <ul class="icon-contact my-flex-center">
-                <li><a href=""><img src="images/icon-facebook.png" alt=""></a></li>
-                <li><a href=""><img src="images/icon-ins.png" alt=""></a></li>
-                <li><a href=""><img src="images/img-twitter.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/icon-ins.png" alt=""></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="images/img-twitter.png" alt=""></a></li>
             </ul>
         </div>
 

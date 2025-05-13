@@ -17,7 +17,6 @@ function addCart() {
 } 
 
 function showWebpage() {
-
     window.open('./collection.html', '_blank');
 } 
 
@@ -41,6 +40,14 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+function openBlogsPage() {
+  window.open('./blogs.html', '_blank');
+}
+
+function reloadHomePage() {
+  window.location.reload();
 }
 
 
