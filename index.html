@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Candy shop</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="shortcut icon" href="images/candyshop.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="texture"></div>
+    <header>
+        <div class="texture"></div>
+        <h3 id="header-title-mobile">the delightful sweet</h3>
+        <input type="checkbox" id="check-navbar">
+        <label class="button-nav open-navbar" for="check-navbar"><i class="fa-solid fa-list"></i></label>
+        <label class="button-nav close-navbar" for="check-navbar"><i class="fa-solid fa-xmark"></i></label>
+        <nav>
+            <ul>
+                <li class="active-li"><a class="active-link" href="#home">home</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="#blogs">blog</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li class="logo-li"><a href="#homelogo" class="logo">
+                        <div class="logo">
+                            <div class="frame">
+                                <img src="images/logo-text.png" alt="logo-text" id="logo-text">
+                                <img src="images/logo-img.png" alt="logo-img" id="logo-img">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label class="overlay" for="check-navbar"></label>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-article">
+                <div class="title-medium">
+                    <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
+                        <path id="curve" d="M150,210 C150,50 350,50 350,210" />
+                        <text>
+                            <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle">
+                                delightful
+                            </textPath>
+                        </text>
+                    </svg>
+                    <div class="container-img">
+                        <img src="images/medium-star.png" alt="this is my medium star" id="img-medium-star">
+                    </div>
+                </div>
+                <div class="title-large">
+                    <h1 class="my-header header-pink">Sweets</h1>
+                    <h1 class="my-header header-pink">Sweets</h1>
+                </div>
+                <div class="box-texts">
+                    <div class="container">
+                        <div class="container-img font">
+                            <img src="images/frame-text.png" alt="Banner frame text image" id="frame-text1">
+                            <div class="home-article-texts">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </div>
+                        </div>
+                        <div class="container-img back">
+                            <img src="images/frame-text.png" alt="Banner frame text image" id="frame-text2">
+                        </div>
+                        <img src="images/shape-pointer.png" alt="this is pointer images" id="img-pointer">
+                    </div>
+                    <div class="container-item">
+                        <img src="images/shape-1.png" alt="this is shape-1 image" id="img-shape-1">
+                    </div>
+                </div>
+            </div>
+            <div class="home-banner">
+                <div class="banner-img-box">
+                    <div class="container-img font">
+                        <img src="images/frame-strawberry.png" alt="frame strawberry" id="frame-font">
+                    </div>
+                    <div class="container-img back">
+                        <img src="images/frame-strawberry.png" alt="frame strawberry" id="frame-back">
+                    </div>
+                </div>
+                <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
+                <img src="images/shape-sad.png" alt="this is my shape-sad image" id="img-shape-sad">
+                <img src="images/shape-smile.png" alt="this is my shape-smile image" id="img-shape-smile">
+                <img src="images/small-star.png" alt="this is my star image" id="img-small-star">
+                <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder">
+                <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder-dup">
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-header">
+                <h1 class="my-header header-yellow">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>o</span>
+                    <span>u</span>
+                    <span>t</span>
+                    <span>&nbsp;</span>
+                    <span>u</span>
+                    <span>s</span>
+                </h1>
+                <img src="images/shape-smile.png" alt="this is my shape-smile" id="img-shape-smile">
+                <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                <img src="images/shape-2.png" alt="this is my shape-2 image" id="img-shape-2">
+            </div>
+            <div class="about-contents">
+                <div class="box-texts">
+                    <div class="container-img font">
+                        <img src="images/frame-text-large.png" alt="this is my frame text large" id="frame-font">
+                        <article class="article-about-texts">
+                            <p class="my-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod temporincididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do
+                                eiusmodtempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                            <p class="my-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+                        </article>
+                    </div>
+                    <div class="container-img back">
+                        <img src="images/frame-text-large.png" alt="this is my frame text large" id="frame-back">
+                    </div>
+                    <img src="images/shape-pointer.png" alt="this is pointer images" id="img-pointer">
+                </div>
+                <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                <img src="images/shape-2.png" alt="this is my shape-2 image" id="img-shape-2">
+                <img src="images/shape-sad.png" alt="this is my shape-sad image" id="img-shape-sad">
+            </div>
+        </section>
+        <section id="products">
+            <section class="new-products">
+                <div class="header-title">
+                    <h1>new products</h1>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-item1">
+
+                        <div class="container-img">
+                            <img src="images/frame-sberry.png" alt="this is my img-sberry">
+                            <!-- <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bookmark"></i> -->
+                            <button id="btn-add-cart" class="my-button btn-yellow" onclick="addCart()">
+                                <p>add to cart</p>
+                            </button>
+                        </div>
+                        <article>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitsed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </article>
+
+
+                    </div>
+                    <div class="flex-item2">
+
+                        <div class="container-img">
+                            <img src="images/frame-mango.png" alt="this is my img-sberry">
+                            <!-- <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-bookmark"></i> -->
+                            <button id="btn-add-cart" class="my-button btn-yellow" onclick="addCart()">
+                                <p>add to cart</p>
+                            </button>
+                        </div>
+                        <article>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitsed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </article>
+                    </div>
+                </div>
+                <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
+            </section>
+            <section class="flex-container_new-release">
+                <div class="flex-item-1">
+                    <div class="container-image">
+                        <div class="wrapper">
+                            <img src="images/img-eggs.jpg" alt="">
+                            <img src="images/img-fruity.jpg" alt="">
+                            <img src="images/img-sberry.jpg" alt="">
+                            <img src="images/img-candy-varius.jpg" alt="">
+                        </div>
+                    </div>
+                    <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                    <div class="folder f1">
+                        <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder-dup">
+                        <p class="my-text">shop</p>
+                    </div>
+                    <div class="folder f2">
+                        <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder-dup">
+                        <p class="my-text">sweet</p>
+                    </div>
+                </div>
+                <div class="flex-item-2">
+                    <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                    <div class="article">
+                        <h3>2021 new release</h3>
+                        <h1 class="my-header header-yellow">our latest collection</h1>
+                        <div class="text-box">
+                            <img src="images/frame-text.png" alt="this is my frame-text" id="img-frame-text">
+                            <div class="text">
+                                <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                    sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                            </div>
+                        </div>
+                        <button class="my-button btn-yellow" onclick="showWebpage()">
+                            <p>learn more</p>
+                        </button>
+                    </div>
+                    <img src="images/shape-smile.png" alt="this is my shape-smile" id="img-shape-smile">
+                </div>
+            </section>
+            <section class="flex-container_ball-of-sweets">
+                <div class="flex-item-1">
+                    <h3>ball of sweets</h3>
+                    <h1 class="my-header header-pink">make it more fun</h1>
+                    <div class="text-box">
+                        <article>
+                            <div class="container-img font">
+                                <img src="images/frame-text.png" alt="this is my frame-text" id="img-frame-text-font">
+                                <div class="desc">
+                                    <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                        sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                                </div>
+                                <button class="my-button btn-pink">
+                                    <p>view collection</p>
+                                </button>
+                            </div>
+                            <div class="container-img back">
+                                <img src="images/frame-text.png" alt="this is my frame-text" id="img-frame-text-back">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="flex-item-2">
+                    <div class="container-image">
+                        <div class="wrapper">
+                            <img src="images/img-fruity.jpg" alt="">
+                            <img src="images/img-eggs.jpg" alt="">
+                            <img src="images/img-sberry.jpg" alt="">
+                            <img src="images/img-candy-varius.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="container-img-shape-1">
+                        <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
+                    </div>
+                </div>
+            </section>
+            <section class="order">
+                <h1>how to order?</h1>
+                <div class="flex-container">
+                    <div class="flex-item-1">
+                        <h3>choose your snack/candy</h3>
+                        <div class="circle-container">
+                            <img src="images/shape-list.png" alt="this is my shape-list" id="img-shape-list">
+                        </div>
+                        <div class="desc">
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elitsed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="flex-item-2">
+                        <h3>customize your package</h3>
+                        <div class="circle-container">
+                            <img src="images/shape-box.png" alt="this is my shape-list" id="img-shape-list">
+                        </div>
+                        <div class="desc">
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elitsed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                    <div class="flex-item-3">
+                        <h3>we'll deliver to you</h3>
+                        <div class="circle-container">
+
+                            <img src="images/shape-shipped.png" alt="this is my shape-list" id="img-shape-shipped">
+
+                        </div>
+                        <div class="desc">
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elitsed do eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="reviews-header">
+                    <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                    <h1>reviews</h1>
+                    <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
+                    <img src="images/shape-smile.png" alt="this is my shape-smile" id="img-shape-smile">
+                </div>
+                <div class="reviews_grid-container">
+                    <div class="grid-item-1">
+                        <div class="imagebox">
+
+                            <img src="images/avatar-1.png" alt="this is my avatar-1" id="avatar">
+
+                            <ul>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i
+                                            class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="article-comment">
+                            <h3>name, surname</h3>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitscd do ciusmod tompor incididunt ut laborc ct
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </div>
+                    </div>
+                    <div class="grid-item-2">
+                        <div class="imagebox">
+                            <img src="images/avatar-2.png" alt="this is my avatar-1" id="avatar">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="article-comment">
+                            <h3>name, surname</h3>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitscd do ciusmod tompor incididunt ut laborc ct
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </div>
+                    </div>
+                    <div class="grid-item-3">
+                        <div class="imagebox">
+                            <img src="images/avatar-3.png" alt="this is my avatar-1" id="avatar">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="article-comment">
+                            <h3>name, surname</h3>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitscd do ciusmod tompor incididunt ut laborc ct
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </div>
+                    </div>
+                    <div class="grid-item-4">
+                        <div class="imagebox">
+                            <img src="images/avatar-4.png" alt="this is my avatar-1" id="avatar">
+                            <ul>
+                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="article-comment">
+                            <h3>name, surname</h3>
+                            <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elitscd do ciusmod tompor incididunt ut laborc ct
+                                dolore magna aliqua. Ut enim ad minim veniam, nos</p>
+                        </div>
+                    </div>
+                    <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
+                </div>
+            </section>
+        </section>
+        <section id="blogs">
+            <h1>recent posts</h1>
+            <div class="grid-container">
+                <div class="grid-item-1">
+                    <div class="card">
+                        <div class="browser-bar">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/img-burger.png" alt="" id="img">
+                        </div>
+                    </div>
+                    <div class="desc-blog">
+                        <div class="content">
+                            <h3>blog title 01</h3>
+                            <p class="my-text">lorem ipsum dolor sit amet conse</p>
+                        </div>
+                        <button class="my-button btn-yellow">
+                            <p>read blog</p>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="grid-item-2">
+                    <div class="card">
+                        <div class="browser-bar">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/img-candy.png" alt="" id="img">
+                        </div>
+                    </div>
+                    <div class="desc-blog">
+                        <div class="content">
+                            <h3>blog title 02</h3>
+                            <p class="my-text">lorem ipsum dolor sit amet conse</p>
+                        </div>
+                        <button class="my-button btn-yellow">
+                            <p>read blog</p>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="grid-item-3">
+                    <div class="card">
+                        <div class="browser-bar">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/img-cookies.png" alt="" id="img">
+                        </div>
+                    </div>
+                    <div class="desc-blog">
+                        <div class="content">
+                            <h3>blog title 03</h3>
+                            <p class="my-text">lorem ipsum dolor sit amet conse</p>
+                        </div>
+                        <button class="my-button btn-yellow">
+                            <p>read blog</p>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="grid-item-4">
+                    <div class="card">
+                        <div class="browser-bar">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="image-container">
+                            <img src="images/img-toys.png" alt="" id="img">
+                        </div>
+                    </div>
+                    <div class="desc-blog">
+                        <div class="content">
+                            <h3>blog title 04</h3>
+                            <p class="my-text">lorem ipsum dolor sit amet conse</p>
+                        </div>
+                        <button class="my-button btn-yellow">
+                            <p>read blog</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <h1 class="my-header header-pink">stay updated</h1>
+                <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <form action="/collection.html" method="get" target="_blank">
+                    <input type="email" name="email" id="email" placeholder="youremail@mail.com" required>
+                    <button class="my-button btn-pink" type="submit">
+                        <p>view collection</p>
+                    </button>
+                </form>
+            </div>
+            <img src="images/shape-smile.png" alt="this is my shape-smile image" id="img-shape-smile">
+            <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star-1">
+            <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star-2">
+            <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
+        </section>
+    </main>
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item-1">
+                <h3>sweet delight</h3>
+                <div class="flex-list">
+                    <ul id="list-left">
+                        <li><a href="">2021's Bestsellers</a></li>
+                        <li><a href="">How to Order</a></li>
+                        <li><a href="">Payment Method</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">New Promos</a></li>
+                    </ul>
+                    <ul id="list-right">
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Gift</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-item-2">
+                <h3>newsletter</h3>
+                <p class="my-text">Join our newsletter for updates</p>
+                <form action="/collection.html" method="get">
+                    <input type="email" name="email-footer" id="email-footer" placeholder="youremail@mail.com" required>
+                    <button class="my-button btn-yellow">
+                        <p>subscribe now</p>
+                    </button>
+                </form>
+            </div>
+            <div class="flex-item-3">
+                <h3>legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Our Promise</a></li>
+                    <li><a href="#">More Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social">
+            <p class="my-text">© Copyright 2025 <a href="#">Sweet Delights</a> All Rights Reserved</p>
+            <ul class="icon-contact">
+                <li><a href=""><img src="images/icon-facebook.png" alt=""></a></li>
+                <li><a href=""><img src="images/icon-ins.png" alt=""></a></li>
+                <li><a href=""><img src="images/img-twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <a href="#home">
+        <div id="btnHome">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+</body>
+<script src="JS/script.js" defer></script>
+
+</html>
