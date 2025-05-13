@@ -41,7 +41,7 @@
     --size-folder: min(10vw, 94px);
     --size-img-avatar: 110px;
     --size-icon-social: 30px;
-    --size-card-blog: min(36.5vw,522px);
+    --size-card-blog: min(36.5vw, 522px);
     --size-browser-blog: 25px;
     --size-form-contact: 50%;
 
@@ -79,6 +79,7 @@ body {
     background-image: var(--texture);
     opacity: 0.2;
 }
+
 @keyframes slidedown {
     from {
         top: -250px;
@@ -89,14 +90,18 @@ body {
     }
 }
 
+/*====================My Custom Class====================*/
+.my-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*====================Button UI====================*/
 .my-button {
     background-color: var(--clr-black);
     width: max-content;
     border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -237,12 +242,6 @@ nav {
 nav ul {
     display: flex;
 
-}
-
-nav ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav a {
@@ -483,9 +482,6 @@ svg path {
     text-align: center;
     color: var(--clr-text-pink);
     font-weight: var(--font-weight-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container #img-pointer {
@@ -622,9 +618,6 @@ svg path {
     width: 100%;
     height: 100%;
     font-size: var(--fs-h2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: var(--font-header);
     text-transform: uppercase;
     color: var(--clr-yellow-bg);
@@ -816,9 +809,6 @@ svg path {
 .new-products>.header-title h1 {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: var(--fs-h2);
     text-transform: uppercase;
     font-family: var(--font-header);
@@ -895,15 +885,71 @@ svg path {
     bottom: 0;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 13;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    flex-direction: column;
+    background-color: var(--clr-pink-bg);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-content > form {
+    flex-direction: column;
+    width: 100%;
+}
+.modal-content > form h2 {
+    color: var(--clr-yellow-bg);
+    text-transform: uppercase;
+    font-size: var(--fs-h3);
+    -webkit-text-stroke: 1px var(--clr-darkpink-text);
+    font-family: var(--font-header);
+}
+.modal-content > form td {
+    padding: 0.5em 1em;
+}
+.modal-content > form label, input::placeholder {
+    color: var(--clr-yellow-bg);
+}
+.modal-content > form input {
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 2px solid var(--clr-yellow-bg);
+}
+
+.close {
+    color: var(--clr-yellow-bg);
+    margin-left:auto ;
+    font-size: var(--fs-h3);
+    font-weight: var(--font-weight-text);
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* =====================NEw RELEASE===================== */
 
 #products .flex-container_new-release {
     width: 100%;
     height: max-content;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 2rem 0;
 }
 
@@ -977,10 +1023,7 @@ svg path {
 }
 
 .flex-container_new-release .flex-item-1 .folder {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container_new-release .flex-item-1 .folder>p {
@@ -1027,10 +1070,7 @@ svg path {
 
 .flex-container_new-release .flex-item-2 .article {
     height: max-content;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container_new-release .flex-item-2 .article h3 {
@@ -1106,20 +1146,14 @@ svg path {
 #products>.flex-container_ball-of-sweets {
     width: 100%;
     height: max-content;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 2em 0;
 }
 
 .flex-container_ball-of-sweets>.flex-item-1 {
     flex: 60%;
     height: max-content;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container_ball-of-sweets>.flex-item-1 h3 {
@@ -1146,10 +1180,7 @@ svg path {
 .flex-container_ball-of-sweets>.flex-item-1 .text-box {
     width: 100%;
     height: 20rem;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container_ball-of-sweets>.flex-item-1 .text-box>article {
@@ -1265,10 +1296,7 @@ svg path {
 #products>.order {
     width: 100%;
     height: max-content;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .order h1 {
@@ -1277,9 +1305,6 @@ svg path {
     text-transform: uppercase;
     color: var(--clr-yellow-bg);
     -webkit-text-stroke: 0.15rem var(--clr-darkpink-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0.5em 0;
     text-align: center;
 }
@@ -1287,18 +1312,12 @@ svg path {
 .order .flex-container {
     width: 80%;
     height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .order .flex-container>div {
     width: calc(100% / 3);
     padding: 2rem;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .order .flex-container>div h3 {
@@ -1306,9 +1325,6 @@ svg path {
     font-family: var(--font-header);
     color: var(--clr-darkpink-text);
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 1em 0;
 }
@@ -1358,10 +1374,7 @@ svg path {
 #products .reviews {
     width: 100%;
     height: max-content;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 2rem 0;
 }
 
@@ -1381,9 +1394,9 @@ svg path {
     margin-left: 3rem;
 }
 
-div.reviews-header > #img-medium-star {
+div.reviews-header>#img-medium-star {
     width: var(--size-medium-star);
-} 
+}
 
 .reviews>div.reviews-header>#img-shape-1 {
     width: var(--size-shape-1);
@@ -1412,9 +1425,6 @@ div.reviews-header > #img-medium-star {
 }
 
 .reviews_grid-container>div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1em 1.5em 1em 0;
 }
 
@@ -1460,9 +1470,6 @@ div.reviews-header > #img-medium-star {
 }
 
 .reviews .reviews_grid-container div>.imagebox ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
     border-radius: 5px;
 }
@@ -1535,9 +1542,6 @@ div.reviews-header > #img-medium-star {
     color: var(--clr-yellow-bg);
     text-transform: capitalize;
     -webkit-text-stroke: 0.15rem var(--clr-darkpink-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 1em;
 }
@@ -1551,10 +1555,7 @@ div.reviews-header > #img-medium-star {
 }
 
 .grid-container>div {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 1em;
 }
 
@@ -1583,11 +1584,13 @@ div.reviews-header > #img-medium-star {
     border-radius: 50%;
     margin-right: 8px;
 }
+
 .grid-container>div>.card>.image-container {
     width: 100%;
     height: max-content;
     overflow: hidden;
 }
+
 .grid-container>div>.card>.image-container img {
     width: 100%;
     height: auto;
@@ -1595,14 +1598,13 @@ div.reviews-header > #img-medium-star {
     transform: scale(1);
     transition: all .5s ease;
 }
+
 .grid-container>div>.card>.image-container img:hover {
     transform: scale(1.2);
     transition: all .5s ease;
 }
+
 .grid-container>div>.desc-blog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1em;
     padding: 1em 0;
 }
@@ -1630,11 +1632,7 @@ div.reviews-header > #img-medium-star {
 }
 
 #contact .content {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 #contact .content h1 {
@@ -1642,14 +1640,11 @@ div.reviews-header > #img-medium-star {
     font-family: var(--font-header);
     text-transform: uppercase;
     color: var(--clr-darkpink-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 0.5em 0;
 }
 
-#contact .content > p {
+#contact .content>p {
     width: 60%;
     font-size: var(--fs-text);
     color: var(--clr-darkpink-text);
@@ -1674,7 +1669,7 @@ div.reviews-header > #img-medium-star {
     margin: 1.5em 0;
 }
 
-#contact .content form > input:focus {
+#contact .content form>input:focus {
     outline: none;
     border-color: var(--clr-darkpink-text);
     background-color: transparent;
@@ -1781,12 +1776,13 @@ footer .flex-container>div>.flex-list {
     gap: 2em;
     flex-wrap: wrap;
 }
-footer .flex-container>div:nth-child(2)> form {
+
+footer .flex-container>div:nth-child(2)>form {
     width: 100%;
     height: max-content;
 }
 
-footer .flex-container>div:nth-child(2)> form input {
+footer .flex-container>div:nth-child(2)>form input {
     font-size: var(--fs-text);
     padding: 1em 5em 1em 1em;
     margin: 0.5em 0;
@@ -1800,7 +1796,7 @@ footer .flex-container>div:nth-child(2)>form input::placeholder {
     font-size: var(--fs-text);
 }
 
-footer .flex-container>div:nth-child(2)> form input:focus {
+footer .flex-container>div:nth-child(2)>form input:focus {
     outline: none;
     border: 0.15em solid var(--clr-darkpink-text);
     background-color: transparent;
@@ -1828,9 +1824,6 @@ footer>.footer-social>p>a {
 }
 
 footer>.footer-social>ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1em;
     height: max-content;
 }

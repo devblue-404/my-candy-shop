@@ -21,12 +21,12 @@
         <label class="button-nav close-navbar" for="check-navbar"><i class="fa-solid fa-xmark"></i></label>
         <nav>
             <ul>
-                <li class="active-li"><a class="active-link" href="#home">home</a></li>
-                <li><a href="#about">about us</a></li>
-                <li><a href="#products">products</a></li>
-                <li><a href="#blogs">blog</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li class="logo-li"><a href="#homelogo" class="logo">
+                <li class="active-li my-flex-center"><a class="active-link" href="#home">home</a></li>
+                <li class="my-flex-center"><a href="#about">about us</a></li>
+                <li class="my-flex-center"><a href="#products">products</a></li>
+                <li class="my-flex-center"><a href="#blogs">blog</a></li>
+                <li class="my-flex-center"><a href="#contact">contact</a></li>
+                <li class="logo-li my-flex-center"><a href="#homelogo" class="logo">
                         <div class="logo">
                             <div class="frame">
                                 <img src="images/logo-text.png" alt="logo-text" id="logo-text">
@@ -64,8 +64,8 @@
                     <div class="container">
                         <div class="container-img font">
                             <img src="images/frame-text.png" alt="Banner frame text image" id="frame-text1">
-                            <div class="home-article-texts">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                            <div class="home-article-texts ">
+                                <p class="my-flex-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit
                                     sed do eiusmod tempor incididunt ut labore et dolore
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                             </div>
@@ -100,7 +100,7 @@
         </section>
         <section id="about">
             <div class="about-header">
-                <h1 class="my-header header-yellow">
+                <h1 class="my-header header-yellow my-flex-center">
                     <span>a</span>
                     <span>b</span>
                     <span>o</span>
@@ -146,7 +146,7 @@
         <section id="products">
             <section class="new-products">
                 <div class="header-title">
-                    <h1>new products</h1>
+                    <h1 class="my-flex-center">new products</h1>
                 </div>
                 <div class="flex-container">
                     <div class="flex-item1">
@@ -155,7 +155,7 @@
                             <img src="images/frame-sberry.png" alt="this is my img-sberry">
                             <!-- <i class="fa-solid fa-heart"></i>
                             <i class="fa-solid fa-bookmark"></i> -->
-                            <button id="btn-add-cart" class="my-button btn-yellow" onclick="addCart()">
+                            <button id="btn-add-cart1" class="my-button btn-yellow .my-flex-center">
                                 <p>add to cart</p>
                             </button>
                         </div>
@@ -173,7 +173,7 @@
                             <img src="images/frame-mango.png" alt="this is my img-sberry">
                             <!-- <i class="fa-solid fa-heart"></i>
                             <i class="fa-solid fa-bookmark"></i> -->
-                            <button id="btn-add-cart" class="my-button btn-yellow" onclick="addCart()">
+                            <button id="btn-add-cart2" class="my-button btn-yellow .my-flex-center">
                                 <p>add to cart</p>
                             </button>
                         </div>
@@ -184,9 +184,50 @@
                         </article>
                     </div>
                 </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content my-flex-center">
+                        <span class="close">&times;</span>
+                        <form class="my-flex-center" action="#" method="post">
+                            <table>
+                                <tr>
+                                    <td><h2>Information</h2></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="fullname">Full Name:</label></td>
+                                    <td><input type="text" id="fullname" name="fullname"
+                                            placeholder="Enter your full name" required pattern="[A-Za-z]" title="Hãy nhập vào chữ!!!"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="phonenumber">Phone Number:</label></td>
+                                    <td><input type="tel" id="phonenumber" name="phonenumber"
+                                            placeholder="Enter your phone number" required pattern="\d{0,9}" maxlength="10" title="Hãy nhập vào số tối đa 10 số"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="email">Email:</label></td>
+                                    <td><input type="email" name="email" id="email" placeholder="Enter your email"required minlength="4"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="quantity">Quantity:</label></td>
+                                    <td><input type="number" id="quantity" name="quantity" placeholder="Enter quantity"
+                                            min="1" required></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit" class="my-button btn-yellow">
+                                            <p>Submit</p>
+                                        </button>
+                                        <button type="reset" class="my-button btn-yellow">
+                                            <p>Reset</p>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
                 <img src="images/shape-1.png" alt="this is my shape-1 image" id="img-shape-1">
             </section>
-            <section class="flex-container_new-release">
+            <section class="flex-container_new-release my-flex-center">
                 <div class="flex-item-1">
                     <div class="container-image">
                         <div class="wrapper">
@@ -197,18 +238,18 @@
                         </div>
                     </div>
                     <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
-                    <div class="folder f1">
+                    <div class="folder f1 my-flex-center">
                         <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder-dup">
                         <p class="my-text">shop</p>
                     </div>
-                    <div class="folder f2">
+                    <div class="folder f2 my-flex-center">
                         <img src="images/shape-folder.png" alt="this is my folder image" id="img-shape-folder-dup">
                         <p class="my-text">sweet</p>
                     </div>
                 </div>
                 <div class="flex-item-2">
                     <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
-                    <div class="article">
+                    <div class="article my-flex-center">
                         <h3>2021 new release</h3>
                         <h1 class="my-header header-yellow">our latest collection</h1>
                         <div class="text-box">
@@ -219,18 +260,18 @@
                                     magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                             </div>
                         </div>
-                        <button class="my-button btn-yellow" onclick="showWebpage()">
+                        <button class="my-button btn-yellow my-flex-center" onclick="showWebpage()">
                             <p>learn more</p>
                         </button>
                     </div>
                     <img src="images/shape-smile.png" alt="this is my shape-smile" id="img-shape-smile">
                 </div>
             </section>
-            <section class="flex-container_ball-of-sweets">
-                <div class="flex-item-1">
+            <section class="flex-container_ball-of-sweets my-flex-center">
+                <div class="flex-item-1 my-flex-center">
                     <h3>ball of sweets</h3>
                     <h1 class="my-header header-pink">make it more fun</h1>
-                    <div class="text-box">
+                    <div class="text-box my-flex-center">
                         <article>
                             <div class="container-img font">
                                 <img src="images/frame-text.png" alt="this is my frame-text" id="img-frame-text-font">
@@ -239,7 +280,7 @@
                                         sed do eiusmod tempor incididunt ut labore et dolore
                                         magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                 </div>
-                                <button class="my-button btn-pink">
+                                <button class="my-button btn-pink my-flex-center" onclick="showWebpage()">
                                     <p>view collection</p>
                                 </button>
                             </div>
@@ -263,11 +304,11 @@
                     </div>
                 </div>
             </section>
-            <section class="order">
-                <h1>how to order?</h1>
-                <div class="flex-container">
-                    <div class="flex-item-1">
-                        <h3>choose your snack/candy</h3>
+            <section class="order my-flex-center">
+                <h1 class="my-flex-center">how to order?</h1>
+                <div class="flex-container my-flex-center">
+                    <div class="flex-item-1 my-flex-center">
+                        <h3 class="my-flex-center">choose your snack/candy</h3>
                         <div class="circle-container">
                             <img src="images/shape-list.png" alt="this is my shape-list" id="img-shape-list">
                         </div>
@@ -276,8 +317,8 @@
                                 adipisicing elitsed do eiusmod tempor</p>
                         </div>
                     </div>
-                    <div class="flex-item-2">
-                        <h3>customize your package</h3>
+                    <div class="flex-item-2 my-flex-center">
+                        <h3 class="my-flex-center">customize your package</h3>
                         <div class="circle-container">
                             <img src="images/shape-box.png" alt="this is my shape-list" id="img-shape-list">
                         </div>
@@ -286,8 +327,8 @@
                                 adipisicing elitsed do eiusmod tempor</p>
                         </div>
                     </div>
-                    <div class="flex-item-3">
-                        <h3>we'll deliver to you</h3>
+                    <div class="flex-item-3 my-flex-center">
+                        <h3 class="my-flex-center">we'll deliver to you</h3>
                         <div class="circle-container">
 
                             <img src="images/shape-shipped.png" alt="this is my shape-list" id="img-shape-shipped">
@@ -300,7 +341,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews my-flex-center">
                 <div class="reviews-header">
                     <img src="images/medium-star.png" alt="this is my medium-star image" id="img-medium-star">
                     <h1>reviews</h1>
@@ -308,16 +349,16 @@
                     <img src="images/shape-smile.png" alt="this is my shape-smile" id="img-shape-smile">
                 </div>
                 <div class="reviews_grid-container">
-                    <div class="grid-item-1">
+                    <div class="grid-item-1 my-flex-center">
                         <div class="imagebox">
 
                             <img src="images/avatar-1.png" alt="this is my avatar-1" id="avatar">
 
                             <ul>
-                                <li><a href="https://www.facebook.com/" target="_blank"><i
+                                <li class="my-flex-center"><a href="https://www.facebook.com/" target="_blank"><i
                                             class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
 
@@ -328,13 +369,13 @@
                                 dolore magna aliqua. Ut enim ad minim veniam, nos</p>
                         </div>
                     </div>
-                    <div class="grid-item-2">
+                    <div class="grid-item-2 my-flex-center">
                         <div class="imagebox">
                             <img src="images/avatar-2.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <div class="article-comment">
@@ -344,13 +385,13 @@
                                 dolore magna aliqua. Ut enim ad minim veniam, nos</p>
                         </div>
                     </div>
-                    <div class="grid-item-3">
+                    <div class="grid-item-3 my-flex-center">
                         <div class="imagebox">
                             <img src="images/avatar-3.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <div class="article-comment">
@@ -360,13 +401,13 @@
                                 dolore magna aliqua. Ut enim ad minim veniam, nos</p>
                         </div>
                     </div>
-                    <div class="grid-item-4">
+                    <div class="grid-item-4 my-flex-center">
                         <div class="imagebox">
                             <img src="images/avatar-4.png" alt="this is my avatar-1" id="avatar">
                             <ul>
-                                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li class="my-flex-center"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <div class="article-comment">
@@ -381,9 +422,9 @@
             </section>
         </section>
         <section id="blogs">
-            <h1>recent posts</h1>
+            <h1 class="my-flex-center">recent posts</h1>
             <div class="grid-container">
-                <div class="grid-item-1">
+                <div class="grid-item-1 my-flex-center">
                     <div class="card">
                         <div class="browser-bar">
                             <span class="dot"></span>
@@ -394,18 +435,18 @@
                             <img src="images/img-burger.png" alt="" id="img">
                         </div>
                     </div>
-                    <div class="desc-blog">
+                    <div class="desc-blog my-flex-center">
                         <div class="content">
                             <h3>blog title 01</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow">
+                        <button class="my-button btn-yellow my-flex-center">
                             <p>read blog</p>
                         </button>
                     </div>
 
                 </div>
-                <div class="grid-item-2">
+                <div class="grid-item-2 my-flex-center">
                     <div class="card">
                         <div class="browser-bar">
                             <span class="dot"></span>
@@ -416,18 +457,18 @@
                             <img src="images/img-candy.png" alt="" id="img">
                         </div>
                     </div>
-                    <div class="desc-blog">
+                    <div class="desc-blog my-flex-center">
                         <div class="content">
                             <h3>blog title 02</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow">
+                        <button class="my-button btn-yellow my-flex-center">
                             <p>read blog</p>
                         </button>
                     </div>
 
                 </div>
-                <div class="grid-item-3">
+                <div class="grid-item-3 my-flex-center">
                     <div class="card">
                         <div class="browser-bar">
                             <span class="dot"></span>
@@ -438,18 +479,18 @@
                             <img src="images/img-cookies.png" alt="" id="img">
                         </div>
                     </div>
-                    <div class="desc-blog">
+                    <div class="desc-blog my-flex-center">
                         <div class="content">
                             <h3>blog title 03</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow">
+                        <button class="my-button btn-yellow my-flex-center">
                             <p>read blog</p>
                         </button>
                     </div>
 
                 </div>
-                <div class="grid-item-4">
+                <div class="grid-item-4 my-flex-center">
                     <div class="card">
                         <div class="browser-bar">
                             <span class="dot"></span>
@@ -460,12 +501,12 @@
                             <img src="images/img-toys.png" alt="" id="img">
                         </div>
                     </div>
-                    <div class="desc-blog">
+                    <div class="desc-blog my-flex-center">
                         <div class="content">
                             <h3>blog title 04</h3>
                             <p class="my-text">lorem ipsum dolor sit amet conse</p>
                         </div>
-                        <button class="my-button btn-yellow">
+                        <button class="my-button btn-yellow my-flex-center">
                             <p>read blog</p>
                         </button>
                     </div>
@@ -473,13 +514,13 @@
             </div>
         </section>
         <section id="contact">
-            <div class="content">
-                <h1 class="my-header header-pink">stay updated</h1>
+            <div class="content my-flex-center">
+                <h1 class="my-flex-center">stay updated</h1>
                 <p class="my-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <form action="/collection.html" method="get" target="_blank">
                     <input type="email" name="email" id="email" placeholder="youremail@mail.com" required>
-                    <button class="my-button btn-pink" type="submit">
+                    <button class="my-button btn-pink my-flex-center" type="submit">
                         <p>view collection</p>
                     </button>
                 </form>
@@ -515,7 +556,7 @@
                 <p class="my-text">Join our newsletter for updates</p>
                 <form action="/collection.html" method="get">
                     <input type="email" name="email-footer" id="email-footer" placeholder="youremail@mail.com" required>
-                    <button class="my-button btn-yellow">
+                    <button class="my-button btn-yellow my-flex-center">
                         <p>subscribe now</p>
                     </button>
                 </form>
@@ -531,7 +572,7 @@
         </div>
         <div class="footer-social">
             <p class="my-text">© Copyright 2025 <a href="#">Sweet Delights</a> All Rights Reserved</p>
-            <ul class="icon-contact">
+            <ul class="icon-contact my-flex-center">
                 <li><a href=""><img src="images/icon-facebook.png" alt=""></a></li>
                 <li><a href=""><img src="images/icon-ins.png" alt=""></a></li>
                 <li><a href=""><img src="images/img-twitter.png" alt=""></a></li>

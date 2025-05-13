@@ -1,6 +1,6 @@
 const header = document.querySelector('header');
 const btnHome = document.getElementById('btnHome');
-const actionButton = document.getElementById('btn-add-cart');
+
 window.addEventListener('scroll', function(){
     if (this.window.scrollY > 20) {
         header.classList.add('sticky');
@@ -17,5 +17,30 @@ function addCart() {
 } 
 
 function showWebpage() {
-    window.location.href = './collection.html';
+
+    window.open('./collection.html', '_blank');
 } 
+
+var actionButton1 = document.getElementById("btn-add-cart1");
+var actionButton2 = document.getElementById("btn-add-cart2");
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+actionButton1.onclick = function() {
+  modal.style.display = "block";
+}
+actionButton2.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
